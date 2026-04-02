@@ -1,0 +1,11 @@
+[project]
+name = "building-with-claude-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.3"
+dependencies = [
+    "anthropic>=0.88.0",
+    "notebook>=7.5.5",
+    "python-dotenv>=1.2.2",
+]
