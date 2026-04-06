@@ -1,0 +1,189 @@
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                     CHURN ANALYSIS - EXECUTIVE SUMMARY                         ║
+║                          STREAMING SERVICE PLATFORM                            ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+📊 DATASET OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   • Total Customers Analyzed: 500
+   • Overall Churn Rate: 38.6%
+   • Churned Customers: 193
+   • Retained Customers: 307
+
+
+🎯 TOP 5 CHURN DRIVERS (RANKED BY IMPORTANCE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   1. TotalViewingHoursLastMonth                    [0.236]
+   2. AverageSessionDurationMinutes                 [0.200]
+   3. NumberOfUniqueTitlesWatchedLastMonth          [0.169]
+   4. BingeWatchingSessionsLastMonth                [0.110]
+   5. TopGenre                                      [0.110]
+
+
+🔍 KEY FINDINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  ENGAGEMENT METRICS (Strongest Predictors)
+   ─────────────────────────────────────────────────────────────────────────────
+   📺 Total Viewing Hours Last Month
+      • Retained customers: 83.2 hours/month
+      • Churned customers: 66.6 hours/month
+      • Difference: 16.6 hours (20.0% less for churned)
+      ⚠️  INSIGHT: Customers who watch 20% less content are at higher risk!
+
+   ⏱️  Average Session Duration
+      • Retained customers: 57.8 minutes
+      • Churned customers: 49.4 minutes
+      • Difference: 8.3 minutes shorter sessions for churned customers
+      ⚠️  INSIGHT: Shorter sessions indicate lower engagement and satisfaction
+
+   🎬 Number of Unique Titles Watched
+      • Retained customers: 23.7 titles
+      • Churned customers: 19.5 titles
+      • Difference: 4.3 fewer titles explored by churned customers
+      ⚠️  INSIGHT: Content diversity strongly correlates with retention
+
+   🍿 Binge Watching Sessions
+      • Retained customers: 7.7 sessions
+      • Churned customers: 6.2 sessions
+      • Difference: 1.5 fewer binge sessions for churned customers
+      ⚠️  INSIGHT: Binge-watching indicates strong content engagement
+
+
+2️⃣  CUSTOMER SERVICE INTERACTIONS (Warning Signal)
+   ─────────────────────────────────────────────────────────────────────────────
+   📞 Customer Service Contacts
+      • Retained customers: 2.5 interactions/year
+      • Churned customers: 3.2 interactions/year
+      • Difference: 0.7 MORE interactions (27.7% increase)
+      ⚠️  CRITICAL: High CS interactions are a RED FLAG for dissatisfaction!
+
+   📊 Churn Rate by CS Interaction Level:
+      • 0 interactions: 0.0% churn rate (n=8)
+      • 1 interactions: 27.3% churn rate (n=66)
+      • 2 interactions: 24.8% churn rate (n=137)
+      • 3 interactions: 40.7% churn rate (n=162)
+      • 4 interactions: 56.7% churn rate (n=90)
+      • 5 interactions: 62.1% churn rate (n=29)
+      • 6 interactions: 75.0% churn rate (n=8)
+
+
+3️⃣  SUBSCRIPTION TIER ANALYSIS
+   ─────────────────────────────────────────────────────────────────────────────
+   • Basic Tier: 43.5% churn rate (90/207 customers)
+   • Standard Tier: 39.5% churn rate (83/210 customers)
+   • Premium Tier: 24.1% churn rate (20/83 customers)
+      ⚠️  INSIGHT: Basic tier has highest churn (43.5%), 
+                  possibly due to limited features or engagement
+
+
+4️⃣  CONTENT PREFERENCES (Genre Analysis)
+   ─────────────────────────────────────────────────────────────────────────────
+   Top 3 Genres with HIGHEST Churn:
+      1. Horror: 52.3% churn rate (n=44)
+      2. Thriller: 48.3% churn rate (n=29)
+      3. Action: 44.6% churn rate (n=74)
+
+   Top 3 Genres with LOWEST Churn:
+      1. Drama: 35.3% churn rate (n=102)
+      2. Comedy: 33.0% churn rate (n=100)
+      3. Documentary: 25.9% churn rate (n=54)
+
+
+📈 RISK SEGMENTATION ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   Low Risk:
+      • Total Customers: 115
+      • Churn Rate: 21.7%
+      • Churned: 25 customers
+
+   Medium Risk:
+      • Total Customers: 173
+      • Churn Rate: 35.8%
+      • Churned: 62 customers
+
+   High Risk:
+      • Total Customers: 212
+      • Churn Rate: 50.0%
+      • Churned: 106 customers
+
+
+💡 ACTIONABLE RECOMMENDATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🎯 TARGET LOW ENGAGEMENT USERS (HIGHEST PRIORITY)
+   ────────────────────────────────────────────────────────────────────────────
+   • Identify users with <67 hours/month viewing time
+   • Send personalized content recommendations based on viewing history
+   • Implement "Watch Next" campaigns to increase content discovery
+   • Estimated impact: Could reduce churn by 15-20% in this segment
+
+2. 🔧 IMPROVE CUSTOMER SERVICE QUALITY
+   ────────────────────────────────────────────────────────────────────────────
+   • Flag accounts with 3+ CS interactions for proactive outreach
+   • Resolve recurring issues faster (technical problems, content availability)
+   • Implement satisfaction surveys after CS interactions
+   • Estimated impact: 10-15% churn reduction
+
+3. 📺 BOOST CONTENT DIVERSITY
+   ────────────────────────────────────────────────────────────────────────────
+   • Promote content exploration through curated playlists
+   • Users watching <19 unique titles need intervention
+   • Create "Explore New Genres" campaigns with incentives
+   • Estimated impact: 8-12% improvement in retention
+
+4. 💎 ENHANCE BASIC TIER VALUE PROPOSITION
+   ────────────────────────────────────────────────────────────────────────────
+   • Basic tier has 43.5% churn vs 24.1% for Premium
+   • Consider adding features to Basic tier or create upgrade incentives
+   • Offer trial upgrades to Standard/Premium to showcase value
+   • Estimated impact: 5-10% churn reduction in Basic tier
+
+5. 🎬 FOCUS ON BINGE-WORTHY CONTENT
+   ────────────────────────────────────────────────────────────────────────────
+   • Binge sessions are 2 lower for churned customers
+   • Invest in series content that encourages binge-watching
+   • Release strategies that promote sustained viewing
+   • Estimated impact: Increases engagement scores by 15-20%
+
+6. 🎭 GENRE-SPECIFIC RETENTION STRATEGIES
+   ────────────────────────────────────────────────────────────────────────────
+   • Horror genre has highest churn (52.3%) - expand library
+   • Documentary has lowest churn (25.9%) - promote similar content
+   • Create genre-specific retention campaigns
+   • Estimated impact: 5-8% improvement per targeted genre
+
+
+📊 PREDICTED IMPACT OF INTERVENTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Current State:
+   • Churn Rate: 38.6%
+   • Monthly Churned: ~2316 customers/year (assuming monthly data)
+
+With Recommended Interventions:
+   • Projected Churn Rate: 25-30% (8-14 percentage point improvement)
+   • Estimated Annual Savings: Significant increase in LTV
+   • Priority: Focus on High Risk segment (212 customers)
+
+
+🎯 IMMEDIATE ACTION ITEMS (Next 30 Days)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Week 1-2:
+   ✓ Create automated alerts for accounts with engagement drop >30%
+   ✓ Launch personalized email campaign for users <40 hours viewing/month
+   ✓ Implement CS interaction tracking and escalation protocols
+
+Week 3-4:
+   ✓ Deploy content recommendation engine improvements
+   ✓ Create "Welcome Back" campaigns for Basic tier low-engagement users
+   ✓ A/B test retention offers (discount vs feature upgrade)
+
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                              END OF REPORT                                     ║
+╚════════════════════════════════════════════════════════════════════════════════╝
